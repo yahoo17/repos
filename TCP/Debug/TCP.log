@@ -1,0 +1,4 @@
+﻿  TCP_File_Transfer_Server.cpp
+C:\Users\DELL\Downloads\Windows套接字入门级编程示例代码\Windows代码\Windows\TCP_File_Transfer_Server.cpp(92,57): error C2664: “PCWSTR InetNtopW(INT,const void *,PWSTR,size_t)”: 无法将参数 3 从“char [256]”转换为“PWSTR”
+C:\Users\DELL\Downloads\Windows套接字入门级编程示例代码\Windows代码\Windows\TCP_File_Transfer_Server.cpp(92,44): message : 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\Ws2tcpip.h(602,1): message : 参见“InetNtopW”的声明
