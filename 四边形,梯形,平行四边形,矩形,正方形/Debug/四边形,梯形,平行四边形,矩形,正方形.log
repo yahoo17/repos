@@ -1,0 +1,37 @@
+﻿  Quadrilateral.cpp
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(53,17): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(108,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(109,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(110,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(111,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(113,11): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(114,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(116,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(117,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(147,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(148,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(149,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(150,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(152,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(153,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(155,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(156,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(171,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(172,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(173,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(174,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(176,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(177,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(179,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(180,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,126): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,112): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,98): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,84): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,70): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,56): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,42): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Quadrilateral.cpp(201,28): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  四边形,梯形,平行四边形,矩形,正方形.cpp
+  正在生成代码...
+  四边形,梯形,平行四边形,矩形,正方形.vcxproj -> C:\Users\DELL\source\repos\四边形,梯形,平行四边形,矩形,正方形\Debug\四边形,梯形,平行四边形,矩形,正方形.exe
