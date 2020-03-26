@@ -1,6 +1,8 @@
-﻿#include<iostream>
+﻿// 序号  1 严灏 201830020446
+#include<iostream>
 #include<iomanip>
 #include<string>
+#include <vector>
 using namespace std;
 
 class Account
@@ -19,20 +21,23 @@ public:
 		return balance;
 	}
 	 
-	inline void credit(double val)
+	 virtual bool credit(double val)
 	{
 		balance += val;
+		return true;
 	}
-	inline bool debit(double val)
+	 virtual bool debit(double val)
 	{
-		if (balance >= val) return (balance -= val, true);
-		else return (cout << "Debit amount exceeded account balance.\n", false);
+		if (balance >= val) 
+			return (balance -= val, true);
+		else 
+			return (cout << "Debit amount exceeded account balance.\n", false);
 	}
 	inline bool check()
 	{
 		return balance >= 0;
 	}
-private:
+protected:
 	double balance;
 };
 
@@ -41,87 +46,93 @@ class CheckingAccount : public Account
 private:
 	double ff;
 public:
-	CheckingAccount(double v = 0.0, double f = 0.0) : ff(f) { balance = v; }
-	bool credit(double v) {
-		if (balance + v - ff >= 0) return (balance += v - ff, true);
-		else return (cout << "Operation not permitted.\n", false);
+	CheckingAccount(double v = 0.0, double f = 0.0) : ff(f) ,Account(v)
+	{ 
+		
 	}
-	bool debit(double v) {
-		if (balance >= v + ff) return balance -= v + ff, true;
-		else return (cout << "Operation not permitted.\n", false);
+	bool credit(double v) 
+	{
+		if (balance + v - ff >= 0)
+		{
+			balance += v;
+			balance -= ff;
+			return  true;
+		}
+		
+		else 
+			return (cout << "Operation not permitted.\n", false);
+	}
+	bool debit(double v)
+	{
+		if (balance >= v + ff)
+		{
+			balance -= v;
+			balance -= ff;
+		}
+			
+		else 
+			return (cout << "Operation not permitted.\n", false);
 	}
 };
 
 class SavingAccount : public Account
 {
-private:
+public:
 	double ra;
 public:
-	SavingAccount(double v, double r) :ra(r)
+	friend void addInterest(SavingAccount& sa);
+	SavingAccount(double v=0.0, double r=0.0) :ra(r), Account(v)
 	{
-		balance = v;
+		double interest =balance * (ra / 100);
+		balance += interest;
+		
 	}
-	using Account::credit;
-	using Account::debit;
-	double calculateInterest()
-	{
-		return balance * ra / 100;
-	}
+	
+	
 };
-
-int main() {
-	//初始化 
-	//输入账户余额 
-	double balance;
-	cin >> balance;
-	//创建一个Account实例 
-	Account a(balance);
-	//检查输入的balance是否合法 
-	if (!a.check())
-	{
-		a.setBalance(0);
-		cout << "Not a valid parameter." << endl;
-		return 0;
-	}
-
-	//输入利率 
-	double rate;
+void addInterest(SavingAccount& sa)
+{
+	
+}
+void create(vector<Account>& vec)
+{
+	double type,rate,credit,debit;
+	cin >> type;
 	cin >> rate;
-	//创建一个SavingAccount实例 
-	SavingAccount aSaving(balance, rate);
-
-	//输入手续费
-	double fee;
-	cin >> fee;
-	//创建一个 CheckingAccount实例 
-	CheckingAccount aChecking(balance, fee);
-
-	//模拟业务 
-		//输入存取钱数 
-	double creditAmount;
-	double debitAmount;
-	cin >> creditAmount >> debitAmount;
-	//测试Acount 
-	a.credit(creditAmount); //存钱 
-	cout << fixed << setprecision(2) << a.getBalance() << endl;//输出余额 
-	if (a.debit(debitAmount)) 
-	{ // 取钱 
-		cout << fixed << setprecision(2) << a.getBalance() << endl;// 输出余额
-	}
-	// 测试 CheckingAccount
-	if (aChecking.credit(creditAmount)) 
+	cin >> credit;
+	cin >> debit;
+	if (type)
 	{
-		cout << fixed << setprecision(2) << aChecking.getBalance() << endl;
+		Account* a1 = new CheckingAccount(10000, rate);
+		
+		a1->credit(credit);
+		a1->debit(debit);
+		vec.push_back(*a1);
+	}
+	else
+	{
+		Account* a2 = new SavingAccount(10000,rate);
+		
+		a2->credit(credit);
+		a2->debit(debit);
+		vec.push_back(*a2);
+	}
+	
+}
+int main() {
+	int number;
+	cin >> number;
+	vector<Account> vec;
+	for (int i = 0; i < number; i++)
+	{
+		create(vec);
 	}
 
-	if (aChecking.debit(debitAmount)) 
-	{
-		cout << fixed << setprecision(2) << aChecking.getBalance() << endl;
-	}
-	//测试 SavingAccount
-	double interest = aSaving.calculateInterest();
-	aSaving.credit(interest);
-	cout << fixed << setprecision(2) << aSaving.getBalance() << endl;
+	
+	
+	for(auto it =vec.begin();it!=vec.end();it++)
+
+		cout << fixed << setprecision(3) << (*it).getBalance() << endl;
 
 	return 0;
 }
