@@ -5,7 +5,7 @@ using namespace std;
 template<class T>
 void Swap(T& t1, T& t2)
 {
-    T tmp;
+    T tmp;                
     tmp = x;
     x = y;
     y = tmp;
