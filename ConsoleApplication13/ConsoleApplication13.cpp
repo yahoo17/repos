@@ -1,4 +1,5 @@
-﻿class listnode
+﻿#include <iostream>
+class listnode
 {
 public:
     int value;
@@ -56,3 +57,12 @@ public:
         return head->min;
     }
 };
+int main()
+{
+    int temp[26];
+    temp['a' - 'a'] = 1;
+    temp['b' - 'a'] = 1;
+    for (auto x : temp)
+        std::cout << x<<" ";
+
+}

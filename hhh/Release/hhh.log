@@ -1,0 +1,9 @@
+﻿  hhh.cpp
+  源.cpp
+C:\Users\DELL\source\repos\hhh\源.cpp(3,8): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+C:\Users\DELL\source\repos\hhh\源.cpp(3,8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\DELL\source\repos\hhh\源.cpp(3,29): error C2238: 意外的标记位于“;”之前
+C:\Users\DELL\source\repos\hhh\源.cpp(15,17): error C2065: “mp”: 未声明的标识符
+C:\Users\DELL\source\repos\hhh\源.cpp(20,25): error C2065: “mp”: 未声明的标识符
+C:\Users\DELL\source\repos\hhh\源.cpp(25,31): error C2065: “mp”: 未声明的标识符
+C:\Users\DELL\source\repos\hhh\源.cpp(27,41): error C2065: “x”: 未声明的标识符
